@@ -1,0 +1,5 @@
+CURRENT_SHELL="zsh"
+SHELL_FILES="${$(readlink $HOME/.zshrc):h}"
+DOT_FILES="${SHELL_FILES:h:h}"
+
+source $DOT_FILES/shells/bootstrap.sh

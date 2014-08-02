@@ -1,0 +1,14 @@
+:link:
+  editors/emacs: ~/.emacs.d
+  editors/vim: ~/.vim
+  editors/vim/gvimrc: ~/.gvimrc
+  editors/vim/vimrc: ~/.vimrc
+  languages/clojure/lein/profiles.clj: ~/.lein/profiles.clj
+  languages/ruby/gemrc: ~/.gemrc
+  misc/psqlrc: ~/.psqlrc
+  shells/zsh/zshenv: ~/.zshenv
+  shells/zsh/zshrc: ~/.zshrc
+  vcs/git/gitconfig: ~/.gitconfig
+  vcs/git/gitignore: ~/.gitignore
+:copy:
+  vcs/git/gitconfig.local: ~/.gitconfig.local

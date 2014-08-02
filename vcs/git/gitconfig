@@ -1,0 +1,30 @@
+[alias]
+  lg = log --graph --decorate --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %C(green bold)(%cr)%Creset' --abbrev-commit --date=relative
+
+[include]
+path = .gitconfig.local
+
+[color]
+ui = auto
+
+[color "diff"]
+commit = yellow reverse
+
+[core]
+excludesfile = ~/.gitignore
+
+[push]
+default = tracking
+
+[merge]
+log = true
+conflictstyle = diff3
+
+[mergetool]
+prompt = false
+
+[rebase]
+autosquash = true
+
+[rerere]
+enabled = 1
