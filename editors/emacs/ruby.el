@@ -2,10 +2,15 @@
 
 (defvar ruby-packages
   '(ruby-mode
+    ruby-tools
+    smartparens
+    inf-ruby
     rspec-mode))
 (dolist (p ruby-packages) (package-require p))
 
 (require 'ruby-mode)
+(require 'smartparens-config)
+(require 'ruby-tools)
 
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
