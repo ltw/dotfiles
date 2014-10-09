@@ -9,3 +9,4 @@ alias rc="if [ -f script/console ]; then script/console; else script/rails conso
 alias rs="if [ -f script/server ]; then script/server; else script/rails server; fi"
 
 alias pubkey="cat $HOME/.ssh/*.pub"
+alias be='bundle exec'
