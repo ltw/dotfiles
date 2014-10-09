@@ -1,5 +1,5 @@
 [alias]
-  lg = log --graph --decorate --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %C(green bold)(%cr)%Creset' --abbrev-commit --date=relative
+lg = log --graph --decorate --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %C(green bold)(%cr)%Creset' --abbrev-commit --date=relative
 
 [include]
 path = .gitconfig.local
@@ -28,3 +28,6 @@ autosquash = true
 
 [rerere]
 enabled = 1
+
+[credential]
+helper = cache
