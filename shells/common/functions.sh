@@ -69,3 +69,6 @@ function xml() {
   cat $tmpfile | pbcopy
   rm $tmpfile
 }
+
+function mine()   { cd "/Users/lucas/Projects/mine/$1" }
+function theirs() { cd "/Users/lucas/Projects/theirs/$1" }
