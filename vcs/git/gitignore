@@ -34,7 +34,6 @@
 build
 build/*
 derby.log
-dist
 log/*
 null
 pkg/*
@@ -56,3 +55,6 @@ tmp/**/*
 .node_modules
 ./node_modules
 node_modules
+
+.ruby-version
+scratch

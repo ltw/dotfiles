@@ -10,3 +10,5 @@ alias rs="if [ -f script/server ]; then script/server; else script/rails server;
 
 alias pubkey="cat $HOME/.ssh/*.pub"
 alias be='bundle exec'
+
+alias yolo="be rake db:drop db:create db:migrate db:seed"

@@ -54,13 +54,13 @@ function extract() {
   fi
 }
 
-function json() {
-  tmpfile=`mktemp -t json`
-  curl -s $* | python -mjson.tool > $tmpfile
-  cat $tmpfile
-  cat $tmpfile | pbcopy
-  rm $tmpfile
-}
+# function json() {
+#   tmpfile=`mktemp -t json`
+#   curl -s $* | python -mjson.tool > $tmpfile
+#   cat $tmpfile
+#   cat $tmpfile | pbcopy
+#   rm $tmpfile
+# }
 
 function xml() {
   tmpfile=`mktemp -t xml`

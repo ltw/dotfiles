@@ -1,5 +1,6 @@
 [alias]
 lg = log --graph --decorate --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %C(green bold)(%cr)%Creset' --abbrev-commit --date=relative
+lgp = log -p --reverse --abbrev-commit --date=relative
 
 [include]
 path = .gitconfig.local
