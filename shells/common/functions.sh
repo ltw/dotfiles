@@ -70,5 +70,5 @@ function xml() {
   rm $tmpfile
 }
 
-function mine()   { cd "/Users/lucas/Projects/mine/$1" }
-function theirs() { cd "/Users/lucas/Projects/theirs/$1" }
+function mine()   { cd "$HOME/Projects/mine/$1" }
+function theirs() { cd "$HOME/Projects/theirs/$1" }
