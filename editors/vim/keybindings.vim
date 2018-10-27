@@ -68,7 +68,7 @@ nnoremap <silent><Leader>cf :let @*=expand('%')<CR>
 nnoremap <silent><Leader>cF :let @*=expand('%').':'.line('.')<CR>
 
 " TComment bindings
-let g:tcommentMapLeaderOp1 = '<Leader>c'
+let g:tcomment_opleader1 = '<Leader>c'
 
 " CtrlP bindings
 let g:ctrlp_map = '<Leader>t'
