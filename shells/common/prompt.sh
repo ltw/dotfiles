@@ -1,7 +1,7 @@
 function user_at_host() {
   local str
 
-  if [[ "$USER" != "lucas" ]]; then
+  if [[ "$USER" != "luwillett" ]]; then
     str="$USER"
 
     if [[ "$USER" == "root" ]]; then
