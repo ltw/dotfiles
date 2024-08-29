@@ -12,3 +12,5 @@ alias pubkey="cat $HOME/.ssh/*.pub"
 alias be='bundle exec'
 
 alias yolo="be rake db:drop db:create db:migrate db:seed"
+
+alias vim='mvim -v'

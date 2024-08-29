@@ -58,3 +58,5 @@ node_modules
 
 .ruby-version
 scratch
+.venv
+$HOME

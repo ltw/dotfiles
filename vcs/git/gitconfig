@@ -32,3 +32,16 @@ enabled = 1
 
 [credential]
 helper = cache
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[user]
+	signingkey = /Users/lucaswillett/.ssh/id_rsa.pub

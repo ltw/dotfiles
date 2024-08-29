@@ -21,7 +21,7 @@ function precmd {
   local cwd="%F{79}%2~$pr_reset$(git_prompt_info)$(git_stash)$pr_reset"
 
   local left
-  left=($(user_at_host) $cwd $(prompt_char))
+  left=($cwd $(prompt_char))
 
   PS1="$left "
 }

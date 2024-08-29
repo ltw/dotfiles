@@ -61,3 +61,5 @@ git_prompt_status() {
   fi
   echo $STATUS
 }
+
+alias git-pull-all="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
