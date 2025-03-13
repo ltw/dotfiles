@@ -2,3 +2,4 @@ old
 .cider-repl-history
 config/shells/common/private.sh
 *sprout*
+**/lazy-lock.json
