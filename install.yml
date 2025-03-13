@@ -1,14 +1,18 @@
 :link:
-  editors/emacs: ~/.emacs.d
-  editors/vim: ~/.vim
-  editors/vim/gvimrc: ~/.gvimrc
-  editors/vim/vimrc: ~/.vimrc
-  languages/clojure/lein/profiles.clj: ~/.lein/profiles.clj
-  languages/ruby/gemrc: ~/.gemrc
-  misc/psqlrc: ~/.psqlrc
-  shells/zsh/zshenv: ~/.zshenv
-  shells/zsh/zshrc: ~/.zshrc
-  vcs/git/gitconfig: ~/.gitconfig
-  vcs/git/gitignore: ~/.gitignore
+  # config directories
+  config/git/: ~/.config/git
+  config/nvim/: ~/.config/nvim
+  config/psql/: ~/.config/psql
+  config/ruby/: ~/.config/ruby
+  config/shells/: ~/.config/shells
+  config/vim/: ~/.config/vim
+  config/wezterm/: ~/.config/wezterm
+  # config file mappings
+  config/shells/zsh/zshenv: ~/.zshenv
+  config/shells/zsh/zshrc: ~/.zshrc
+  config/shells/zsh/sproutrc: ~/.sproutrc
+  config/git/gitconfig: ~/.gitconfig
+  config/git/gitignore: ~/.gitignore
+  config/wezterm/config.lua: ~/.wezterm.lua
 :copy:
-  vcs/git/gitconfig.local: ~/.gitconfig.local
+  config/git/gitconfig.local: ~/.gitconfig.local

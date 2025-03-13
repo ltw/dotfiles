@@ -1,0 +1,22 @@
+CURRENT_SHELL="zsh"
+
+DOT_FILES="${$(readlink $HOME/.zshrc):h:h:h:h}"
+
+CONFIG_FILES="${DOT_FILES}/config"
+SHELL_FILES="${CONFIG_FILES}/shells"
+ZSH_SHELL_FILES="${SHELL_FILES}/zsh"
+COMMON_SHELL_FILES="${SHELL_FILES}/common"
+
+source $SHELL_FILES/bootstrap.sh
+
+### add homebrew to PATH
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+
+### Add the current directory's bin to PATH
+export PATH="./bin:$PATH"
+
+export KUBECONFIG=~/.kube/config
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+source $HOME/.sproutrc # add sprout-specific rc here
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
