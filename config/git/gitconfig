@@ -1,0 +1,45 @@
+[alias]
+lg = log --graph --decorate --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(black bold)- %an %C(green bold)(%cr)%Creset' --abbrev-commit --date=relative
+lgp = log -p --reverse --abbrev-commit --date=relative
+
+[include]
+path = .gitconfig.local
+
+[color]
+ui = auto
+
+[color "diff"]
+commit = yellow reverse
+
+[core]
+include = ~/.gitconfig.local
+excludesfile = ~/.gitignore
+editor = nvim
+
+[push]
+default = tracking
+
+[merge]
+log = true
+conflictstyle = diff3
+
+[mergetool]
+prompt = false
+
+[rebase]
+autosquash = true
+
+[rerere]
+enabled = 1
+
+[credential]
+helper = cache
+
+[init]
+defaultBranch = main
+
+[filter "lfs"]
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true

@@ -1,3 +1,4 @@
 old
 .cider-repl-history
-shells/common/private.sh
+config/shells/common/private.sh
+*sprout*
