@@ -10,6 +10,7 @@
   # config file mappings
   config/shells/zsh/zshenv: ~/.zshenv
   config/shells/zsh/zshrc: ~/.zshrc
+  config/shells/zsh/devenvrc: ~/.devenvrc
   config/shells/zsh/sproutrc: ~/.sproutrc
   config/git/gitconfig: ~/.gitconfig
   config/git/gitignore: ~/.gitignore
