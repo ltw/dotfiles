@@ -20,8 +20,8 @@ export GPG_TTY=$(tty)
 export KUBECONFIG=~/.kube/config
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
-source $HOME/.devenvrc # add devenv-specific rc here
-source $HOME/.sproutrc # add sprout-specific rc here
+[[ -f "$HOME/.devenvrc" ]] && source $HOME/.devenvrc # add devenv-specific rc here
+[[ -f "$HOME/.sproucrc" ]] && source $HOME/.sproutrc # add sprout-specific rc here
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 __git_files () { 
