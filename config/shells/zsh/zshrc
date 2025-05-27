@@ -27,3 +27,5 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
